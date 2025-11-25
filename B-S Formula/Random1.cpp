@@ -9,6 +9,7 @@ double GetOneGaussianBySummation()
     double result = 0;
     for(unsigned long j=0; j<12; j++) result += rand()/static_cast<double> (RAND_MAX);
     result -= 6.0;
+    return result;
 }
 
 double GetOneGaussianByBoxMuller()
